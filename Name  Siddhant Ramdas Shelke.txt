@@ -1,0 +1,53 @@
+Name : Siddhant Ramdas Shelke
+FRN :FRN-18J0726/015
+SET :A
+Q.1: 
+#include<stdio.h>
+void main(){
+	int num1;
+	int num2;
+	int flag;
+	int i;
+	int j;
+	int sum=0;
+	printf("Enter The Range: ");
+	scanf("%d",&num1);
+	printf("Enter The Range: ");
+	scanf("%d",&num2);
+	for(i=num1;i<=num2;i++)
+	{
+		flag=1;
+		for(j=2;j<i;j++)
+		{
+			if(i%j==0)
+			{
+				flag=0;
+				break;
+			}
+		}
+		if(i>1&&flag==1)
+         sum=sum+i;
+}
+		printf("sum %d :",sum);
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Q.2:
+#include<stdio.h>
+void main(){
+	char str[50];
+	char ch;
+	int i;
+	printf("Enter A string:");
+	scanf("%s",str);
+	printf("Enter A Character:");
+	scanf(" %c",&ch);
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(str[i]==ch)
+		{
+		str[i]='@';
+	}
+	}
+	printf("String=%s",str);
+}
